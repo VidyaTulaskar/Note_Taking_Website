@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Note Taker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<style>
+		html,body{
+    		height: 100%;
+    		margin: auto;
+    		display: flex;
+   		 	align-items: center;
+		}
+  		body{
+	 		background-color: #B2B5E0;
+ 	 		padding-top: 70px; 
+ 	 	}
+  		.logo{
+			font-family: 'Lobster', cursive;
+    		font-weight: 600;
+    		font-size: 30px;
+    	}
+		.reg_form{
+			margin-top: 0px;
+			background-color: whitesmoke; 
+    		padding: 40px;
+    		height: 570px;
+			font-size: 17px;
+			box-shadow: 10px 10px 10px rgb(83, 82, 82);
+		}
+		.main_text{
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			color: rgb(0, 0, 128); 
+			font-size: 30px;
+		}
+		input[type="submit"]{
+			margin-top: 5px;
+			background-color:#9071c9;
+			padding: 8px;
+			color: white;
+			width: 80px;
+			transition:all 1s ease;
+		}
+		input[type="submit"]:hover{
+			background-color:#a28bce;
+			box-shadow: 2px 2px 6px black;
+		}
+		input{
+			margin-bottom: 20px;
+		}
+	
+
+  	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand logo"  style="color: #dfd3f4;" href="#">Note Taker</a>
+    		</div>
+    	<ul class="nav navbar-nav">
+      		<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      		<li class="disabled"><a href="Note.jsp"><span class="glyphicon glyphicon-plus"></span> Add Note</a></li>
+	  		<li class="disabled"><a href="view"><span class="glyphicon glyphicon-eye-open"></span> Show Notes</a></li>
+    	</ul>
+    	<ul class="nav navbar-nav navbar-right">
+      		<li class="active"><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      		<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    	</ul>
+  		</div>
+	</nav>
+	<form action="userReg" method="post" class="reg_form">			
+		<span class="main_text"><center>Register Page</center></span><br>
+		<label for="unm">UserName</label>
+		&nbsp;&nbsp;<input type="text" name="uname" id="unm" required><br>
+		<label for="pword">Password</label>
+		&nbsp;&nbsp;&nbsp;<input type="password" name="pword" id="pword" required><br>
+		<label for="fnm">FirstName</label>
+		&nbsp;&nbsp;<input type="text" name="fname" id="fnm" required><br>
+		<label for="lnm">LastName</label>
+		&nbsp;&nbsp; <input type="text" name="lname" id="lnm" required><br>
+		<label for="add">Address</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="addr" id="add" required><br>
+		<label for="mid">MailId</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="mid" id="mid" required><br/>
+		<label for="pno">PhoneNo</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phno" id="pno" required><br>
+		<center><input type="submit" value="Register"></center>
+	</form>
+</body>
+</html>

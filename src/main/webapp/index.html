@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Note Taker</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+	html,body{
+    	height: 100%;
+    	/*margin: 0;
+    	padding: 0;*/
+    	margin: auto;
+    	display: flex;
+    	align-items: center;
+	}
+ 	body{
+	 	background-color: #B2B5E0;
+	 	padding-top: 70px;
+	}
+	.logo{
+		font-family: 'Lobster', cursive;
+    	font-weight: 600;
+    	font-size: 30px;
+	}
+	.containt_box{
+    	background-color:  white;
+    	padding: 40px;
+		height: 320px;
+		box-shadow: 10px 10px 10px rgb(83, 82, 82);
+	}
+ 	.main_text{
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-size: 30px;
+		color: rgb(0, 0, 128); text-shadow: 2px 2px 5px #a15ad7;
+	}
+	.sub_text{
+		color: rgb(0, 0, 128); 
+		font-family: cursive;
+		font-size: 21px;
+	}
+	.link{
+		color:#9071c9;
+		transition: all 0.4s ease;
+	}
+	.link:hover{
+		color:blueviolet;
+		font-size: 18px;
+		text-decoration: none;
+	}	
+  </style>
+</head>
+<body>
+<div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand logo"  style="color: #dfd3f4;" href="#">Note Taker</a>
+    		</div>
+    	<ul class="nav navbar-nav">
+      		<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      		<li class="disabled"><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Note</a></li>
+	  		<li class="disabled"><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Show Notes</a></li>
+    	</ul>
+    	<ul class="nav navbar-nav navbar-right">
+    		<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+    		<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    	</ul>
+  		</div>
+	</nav>
+<div class="containt_box">
+	<div class="main_text">Welcome to Note Taker application....</div></br/>
+	<div class="sub_text">Greate things start from the idea! & <br/>idea implemented when we start taking the note of that idea...<br/>So let's</div><br/>
+	<a class="link" href="login.html"><span class="glyphicon glyphicon-new-window"></span> Start Now</a>
+</div>
+</body>
+</html>

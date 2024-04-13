@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Note Taker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<style>
+		html,body{
+    		height: 100%;
+    		/*margin: 0;
+    		padding: 0;*/
+    		margin: auto;
+    		display: flex;
+    		align-items: center;
+		}
+ 		body{
+	 		background-color: #B2B5E0;
+ 	 		padding-top: 70px; 
+ 	 	}
+  		.logo{
+			font-family: 'Lobster', cursive;
+    		font-weight: 600;
+    		font-size: 30px;
+   		}
+		.login_form{
+			background-color: whitesmoke; 
+    		padding: 40px;
+			height: 400px;
+			font-size: 17px;
+			box-shadow: 10px 10px 10px rgb(83, 82, 82);
+		}
+		.main_text{
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			font-size: 30px;
+			color: rgb(0, 0, 128); 
+		}
+		input[type="submit"]{
+			margin-top: 6px;
+			background-color:#9071c9;
+			padding: 8px;
+			color: white;
+			width: 80px;
+			transition:all 1s ease;
+		}
+		input[type="submit"]:hover{
+			background-color:#a28bce;
+			box-shadow: 2px 2px 6px black;
+		}
+		hr {
+  			border: none;
+  			border-top: solid #333;
+  			color: #333;
+  			overflow: visible;
+  			text-align: center;
+  			height: 3px;
+		}
+		input{
+			margin-bottom: 20px;
+		}
+		.link{
+			color:#9071c9;
+			transition: all 0.4s ease;
+		}
+		.link:hover{
+			color:blueviolet;
+			font-size: 18px;
+			text-decoration: none;
+		}
+  	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand logo"  style="color: #dfd3f4;" href="#">Note Taker</a>
+    		</div>
+    	<ul class="nav navbar-nav">
+      		<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      		<li class="disabled"><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Note</a></li>
+	  		<li class="disabled"><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Show Notes</a></li>
+    	</ul>
+    	<ul class="nav navbar-nav navbar-right">
+      		<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      		<li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    	</ul>
+  		</div>
+	</nav>
+</head>
+<body>	
+<form action="userLog" method="post" class="login_form">
+	<span class="main_text"><center>Login Page</center></span><br>
+	<label for="txt">UserName</label>
+	&nbsp;&nbsp;<input type="text" name="uname" id="txt" required><br>
+	<label for="pass">Password</label>
+	&nbsp;&nbsp;&nbsp;<input type="password" name="pword" id="pass" required><br>	
+	<center><input type="submit" value="Login"></center><hr>	
+	<a class="link" href="register.html"><center><span class="glyphicon glyphicon-user"></span> New User?</center></a>
+</form>	
+</body>
+</html>
